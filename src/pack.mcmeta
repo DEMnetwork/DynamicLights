@@ -1,0 +1,25 @@
+{
+    "pack": {
+        "description": [
+            {
+                "text": "Dynamic",
+                "color": "green",
+                "italic": false,
+                "bold": false
+            },
+            {
+                "text": "Lights",
+                "color": "gold",
+                "italic": false,
+                "bold": false
+            },
+            {
+                "text": " Datapack",
+                "color": "aqua",
+                "italic": false,
+                "bold": true
+            }
+        ],
+        "pack_format": 36
+    }
+}
