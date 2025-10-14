@@ -1,3 +1,5 @@
-execute as @a[nbt={SelectedItem:{id:"minecraft:torch"}}] at @s run summon minecraft:marker ~ ~ ~ {Tags:["light"]}
-execute as @a[nbt={SelectedItem:{id:"minecraft:lantern"}}] at @s run summon minecraft:marker ~ ~ ~ {Tags:["light"]}
-execute as @a[nbt={SelectedItem:{id:"minecraft:sea_pickle"}}] at @s run summon minecraft:marker ~ ~ ~ {Tags:["wlight"]}
+scoreboard players set @s hasLight 0
+scoreboard players set @s hasWLight 0
+execute as @s[nbt={SelectedItem:{id:"minecraft:torch"}}] run scoreboard players set @s hasLight 1
+execute as @s[nbt={SelectedItem:{id:"minecraft:lantern"}}] run scoreboard players set @s hasLight 1
+execute as @s[nbt={SelectedItem:{id:"minecraft:sea_pickle"}}] run scoreboard players set @s hasWLight 1
