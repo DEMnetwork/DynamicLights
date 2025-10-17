@@ -1,4 +1,5 @@
 execute as @a at @s run function #dynamiclights:makelights
+execute as @a at @s if score s0 svals matches 0 run function #dynamiclights:extensions
 execute as @a[scores={hasLight=1}] at @s unless entity @e[type=marker,tag=light,distance=..0.7071067811865475] unless block ~ ~ ~ light[level=15,waterlogged=false] unless block ~ ~1 ~ light[level=15, waterlogged=false] unless block ~ ~ ~ light[level=15,waterlogged=true] unless block ~ ~1 ~ light[level=15,waterlogged=true] run summon minecraft:marker ~ ~ ~ {Tags:["light"]}
 execute as @a[scores={hasWLight=1}] at @s unless entity @e[type=marker,tag=wlight,distance=..0.7071067811865475] unless block ~ ~ ~ light[level=15,waterlogged=false] unless block ~ ~1 ~ light[level=15, waterlogged=false] unless block ~ ~ ~ light[level=15,waterlogged=true] unless block ~ ~1 ~ light[level=15,waterlogged=true] run summon minecraft:marker ~ ~ ~ {Tags:["wlight"]}
 execute as @e[type=marker,tag=light] at @s if entity @p[distance=..1.5, scores={hasLight=1}] run fill ~ ~ ~ ~ ~1 ~ light[level=15, waterlogged=false] replace air

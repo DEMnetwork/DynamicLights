@@ -1,0 +1,1 @@
+execute store result storage dynamiclights:settings s0 int 1 run scoreboard players get s0 svals

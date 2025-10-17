@@ -1,0 +1,1 @@
+execute store result score s0 svals run data get storage dynamiclights:settings s0
